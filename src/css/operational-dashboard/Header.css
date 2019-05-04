@@ -1,0 +1,66 @@
+.header-container {
+    height: 1.7em;
+    background-color: white;
+    box-shadow: 1px 3px 6px 2px rgb(180, 180, 180);
+    color: rgb(71,153,182);
+    font-size: 1.5em;
+    text-align: center;
+
+
+}
+
+.pre-title-cell {
+    background-color: rgb(23,126,131);
+    color: white;
+}
+.boil-title-cell {
+    background-color: rgb(61,131,61);
+    color: white;
+}
+.pay-title-cell {
+    background-color: rgb(88,63,121);
+    color: white;
+}
+.table-row {
+    height: 30vh;
+    margin-bottom: .5em;
+}
+
+.cell {
+    height: 30vh;  
+    width: 100%;
+}
+/* 
+.queue-box {
+    width: 11rem;
+    height: 4rem;
+}
+
+.queue-number {
+    color: rgb(71,153,181);
+    line-height: 2.4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.queue-title {
+    color: white;
+}
+
+.managed-queue {
+    background-color: rgb(226, 239, 241)
+}
+
+.boiled-queue {
+    background-color: rgb(215, 233, 213)
+}
+
+.paid-queue {
+    background-color: rgb(218, 200, 249)
+}
+
+.card-box {
+    width: 5.2rem;
+    height: 2.5rem;
+    background-color: white;
+} */
