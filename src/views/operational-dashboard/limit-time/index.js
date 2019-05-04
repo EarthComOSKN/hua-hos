@@ -59,7 +59,7 @@ class LimitDashboard extends Component {
 			showLoaderOnConfirm: true,
 			reverseButtons: true,
 			preConfirm: async () => {
-				// return await Axios.post("https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staff/setStaff", this.state);
+				// return await Axios.post("https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staffdash/setStaff", this.state);
 				localStorage.setItem(
 					'limit',
 					`${this.state.hour_pick},${this.state.min_pick},${this.state.hour_decoct},${

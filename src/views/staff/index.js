@@ -58,7 +58,7 @@ class StaffDashboard extends Component {
 			cancelButtonColor: 'black',
 			reverseButtons: true,
 			preConfirm: async () => {
-				return await Axios.post('https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staff/setStaff', this.state);
+				return await Axios.post('https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staffdash/setStaff', this.state);
 			},
 			allowOutsideClick: () => !Swal.isLoading(),
 		}).then(result => {
@@ -77,7 +77,7 @@ class StaffDashboard extends Component {
 		this.getData();
 	}
 	async getData() {
-		const res = await Axios.get('https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staff/getStaff');
+		const res = await Axios.get('https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staffdash/getStaff');
 		// // console.log(res.data);
 		const { data } = res;
 
