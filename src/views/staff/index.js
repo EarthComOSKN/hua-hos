@@ -3,6 +3,7 @@ import Axios from 'axios';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import styled from 'styled-components';
+import config from '../../config';
 const MySwal = withReactContent(Swal);
 const Container = styled.div`
 	background-color: rgb(223, 221, 221);
@@ -57,7 +58,7 @@ class StaffDashboard extends Component {
 			cancelButtonColor: 'black',
 			reverseButtons: true,
 			preConfirm: async () => {
-				return await Axios.post('https://us-central1-hospital-app-e6e5e.cloudfunctions.net/staff/setStaff', this.state);
+				return await Axios.post('https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staff/setStaff', this.state);
 			},
 			allowOutsideClick: () => !Swal.isLoading(),
 		}).then(result => {
@@ -76,7 +77,7 @@ class StaffDashboard extends Component {
 		this.getData();
 	}
 	async getData() {
-		const res = await Axios.get('https://us-central1-hospital-app-e6e5e.cloudfunctions.net/staff/getStaff');
+		const res = await Axios.get('https://us-central1-dashboard-backend-4e571.cloudfunctions.net/staff/getStaff');
 		// // console.log(res.data);
 		const { data } = res;
 
